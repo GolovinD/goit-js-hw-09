@@ -9,7 +9,7 @@ const minutesRef = getEl('span[data-minutes]');
 const secondsRef = getEl('span[data-seconds]');
 const btnStartRef = getEl('button[data-start]')
 
-// let endTime = null
+let endTime = null
 
 btnStartRef.setAttribute('disabled', true);
 
@@ -78,7 +78,5 @@ function convertMs(ms) {
   // Remaining seconds
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
-    return { days, hours, minutes, seconds };
-    
+    return { days, hours, minutes, seconds };   
 }
-
