@@ -9,8 +9,6 @@ const minutesRef = getEl('span[data-minutes]');
 const secondsRef = getEl('span[data-seconds]');
 const btnStartRef = getEl('button[data-start]')
 
-let endTime = null
-
 btnStartRef.setAttribute('disabled', true);
 
 const options = {
@@ -24,7 +22,7 @@ const options = {
             return
         };
 
-        endTime = selectedDates[0];
+        let endTime = selectedDates[0];
         btnStartRef.removeAttribute('disabled');
         
         function getTimeLeft() {
