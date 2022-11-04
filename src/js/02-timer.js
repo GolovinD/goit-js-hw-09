@@ -36,7 +36,7 @@ const options = {
             btnStartRef.setAttribute('disabled', true);
             inputRef.setAttribute('disabled', true);
             showTimer(getTimeLeft());
-            intervalId = setInterval(() => {
+            setInterval(() => {
                 if (getTimeLeft() === 0) {
                     return
                 }
